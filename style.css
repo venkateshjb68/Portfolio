@@ -1,0 +1,206 @@
+[class^="container"]{
+    border: 1px solid red;
+}
+#head{
+    background-color:none;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 5;
+} 
+#image{
+    width: 150px;
+    height: 50px;
+    animation-name: logo;
+   animation-duration: 1s;
+}
+#img1{
+    height: 300px;
+    width: auto;
+}
+#me{
+   margin-top: 150px;
+   color: cyan;
+   /* text-align: center;    */
+   /* animation-name: NAME;
+   animation-duration: 1s; */
+}
+
+nav ul li a{
+   animation-name: nav;
+   animation-duration: 1s;
+   /* animation-delay: 1s; */
+}
+.btn-box:hover{
+    box-shadow: 0 0 4px rgb(233, 5, 138), 0 0 25px rgb(255, 0, 157), 
+    0 0 50px rgb(255, 0, 212), 0 0 100px rgb(255, 0, 170);
+}
+.btn-box{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0ef;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 800;
+}
+#edu{
+    display: none;
+    animation-name: educ;
+    animation-duration: 2s;
+    color: black;
+}
+#intern{
+    display: none;
+    animation-name: int;
+    animation-duration: 2s;
+    color: rgb(250, 3, 3);
+    text-align: center;
+}
+#intern div{
+    background-color:aquamarine;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+#btn{
+    padding: 20px 20px;
+    background-color: rgb(216, 229, 240);
+    border-radius: 40px;
+    border: none;
+    border-bottom: 2px solid black;
+    letter-spacing: 2px;
+    font-weight: 900;
+    font-size: larger;
+    text-decoration: none;
+}
+#btn:hover{
+    box-shadow: 0 0 4px rgb(233, 5, 5), 0 0 25px rgb(255, 0, 0), 
+    0 0 50px rgb(255, 0, 0), 0 0 100px rgb(255, 0, 0);
+}
+#b1{
+    padding: 10px 20px;
+    background-color: rgb(216, 229, 240);
+    border-radius: 40px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    letter-spacing: 1px;
+    font-weight: 800;
+   
+}
+#b1:hover{
+    box-shadow: 0 0 4px rgb(233, 5, 5), 0 0 25px rgb(255, 0, 0), 
+    0 0 50px rgb(255, 0, 0), 0 0 100px rgb(255, 0, 0);
+}
+#b2{
+    padding: 10px 20px;
+    background-color: rgb(216, 229, 240);
+    border-radius: 40px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+#b2:hover{
+    box-shadow: 0 0 4px rgb(233, 5, 138), 0 0 25px rgb(255, 0, 157), 
+    0 0 50px rgb(255, 0, 212), 0 0 100px rgb(255, 0, 170);
+}
+#submit{
+    border-radius: 50%;
+}
+#submit:hover{
+    box-shadow: 0 0 4px rgb(233, 5, 138), 0 0 25px rgb(255, 0, 157), 
+    0 0 50px rgb(255, 0, 212), 0 0 80px rgb(77, 30, 61);
+}
+/* #contact{
+    border: 1px solid black;
+    width: 400px;
+    height: 500px; 
+    background: url('https://miro.medium.com/v2/resize:fit:646/1*BxTA9zYVYtTwwWdSm7drOw.jpeg') no-repeat;
+     backdrop-filter: brightness(100%); 
+     color: white; 
+     border-radius: 20px;
+    background-size: cover;
+    background-position: center; 
+    margin-left: 400px; 
+    overflow: hidden;
+    align-items: center ;
+} */
+
+#todo:hover{
+    transform: scale(0.9);
+}
+#curr:hover{
+    transform: scale(0.9);
+}
+#tm:hover{
+    transform: scale(0.9);
+}
+.skill-fill {
+    width: 0;
+    animation: fillBar 2s forwards;
+}
+td:hover{
+    transform: scale(1.2);
+}
+@keyframes fillBar {
+    to {
+        width: var(--fill-width);
+    }
+}
+
+
+@keyframes educ{
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes int{
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes nav{
+    0%{
+        transform: translateY(-100px);
+        /* opacity: 0; */
+    }
+    100%{
+        transform: translateY(0px);
+        /* opacity: 0; */
+    }
+}
+
+@keyframes logo{
+    0%{
+        transform: translateX(-100px);
+        /* opacity: 0; */
+    }
+    100%{
+        transform: translateX(0px);
+        /* opacity: 0; */
+    }
+}
+/* @keyframes NAME{
+    0%{
+        text-align: center;
+        transform: translateX(-50px);
+        color: red;
+        /* opacity: 0; 
+    }
+    0%{
+        
+        font-weight: bolder;
+        color: aqua;
+        transform: translateX(-500px);
+        /* opacity: 0; 
+    }
+} */
